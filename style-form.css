@@ -1,0 +1,29 @@
+.input-group {
+    display: block;
+    flex-wrap: wrap;
+
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"] {
+    width: 20%;
+    padding: 0.5rem;
+    border: 2px solid #CCD595; /* personalizando a borda */
+    outline: none; /* tirando o outiline, estética */
+    border-radius: 100px; /* arredondando as bordas */
+
+
+}
+
+/* Diferenciando o botão de enviar */
+
+input[type="submit"] {
+    width: 10%;
+    padding: 0.2rem;
+    border: 2px solid #CCD595; /* personalizando a borda */
+    outline: none; /* tirando o outiline, estética */
+    border-radius: 100px; /* arredondando as bordas */
+    text-align: center;
+}

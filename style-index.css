@@ -1,0 +1,111 @@
+/* Estilizando o "body" como um todo */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); 
+/* Importando uma fonte do google fontes */
+
+
+/* Estilizando os aspectos gerais do projeto */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ; /* definir altura e largura dos elementos */
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+
+header { /* Estilizando o cabeçalho */
+    padding: 2rem; /* unidade de medida variável conforme dispositivo */
+    text-align: center;
+    background-color: rgb(27, 82, 82);
+
+}
+
+
+body { /* Estilizando o "body" como um todo */
+    width: 50%;
+    height: 50vh;
+    transform-origin: top left;
+    transform: scale(2); /* Ajustando as proporções conforme os elementos do projeto */
+    line-height: 1.5; /* Espaçamento entre as linhas */
+    background-color: #F4F0EA;
+    background-repeat: no-repeat;
+    color: #798252; 
+
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    gap: 1.5rem; /* define o espaçamento entre */
+
+}
+
+section {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+
+}
+
+h1, h2, h3, h4 {
+    color: #331f19;
+}
+
+footer {
+    text-align: center;
+
+}
+
+/*  */
+
+#links-externos {
+    text-align: center;
+    
+}
+
+#links-externos li {
+    text-align: justify;
+    margin-bottom: 15%;
+    font-size: small;
+
+}
+
+/* Formatando imagem */
+
+.foto-perfil {
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin-left: 3px;
+}
+
+/* Modificando as listas */
+
+li { 
+    list-style: none; /* Tirando os pontos da lista */
+}
+
+#competencias li { /* Alterando a listagem da seção "Competências" */
+    list-style:circle;
+}
+
+#link-sm li { /*  */
+    display:flex; /* */
+    flex-direction: row; /* */
+    gap: 1rem; /* margem entre os componentes */
+    justify-content: center;
+    
+}
+
+.container { /* Padronizando os itens com o class "container" */
+    background-color: #d8dad1;
+    padding: 0.2rem;
+    border: 2px solid #CCD595;
+    border-radius: 15px;
+}
+
+/* Estilizando elementos dos formulários */
+

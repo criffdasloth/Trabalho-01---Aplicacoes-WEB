@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- declaração da linguagem -->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!-- declaração de metadados -->
+    <meta name="description" content="Trabalho número 1 da cadeira de aplicações web">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="style-index.css">
+</head>
+
+<body> <!-- Cabeçalho com informações introdutórias da página e links para páginas externas -->
+    <header id="cabecalho"> 
+        <h1>Página de apresentação!</h1>
+        <p> Bem-vindo ao meu portifólio!</p>
+    </header>
+
+    <main id="conteudo-principal"> <!-- Seção principal da página -->
+        
+        <section id="links-externos"> <!-- Seção com os links externos -->
+            <div class="container">
+                <nav>
+                    <ul>
+                    <h4>Links utéis:</h4>
+                    <li><a href="cadastro_aluno.html">Cadastro para alunos</a></li>
+                    <li><a href="cadastro_professor.html">Cadastro para professores</a></li>
+                    </ul>
+                </nav>
+            </div>  
+        </section>
+        
+        <section id="posts">
+                <h2>Quem sou eu?</h2> 
+
+            <article> <!-- Seperando as seções por artigos separados -->
+                <h3>Apresentação</h3> <!-- Apresentada em um páragrafo -->   
+                <img src="./teste.jfif" alt="imagem teste" class="foto-perfil"> <!-- Inserindo a imagem e posicionando entre o texto -->
+                <p>"Olá! Meu nome é Crístian Godoi Viegas e sou recém-ingressante no curso de Sistemas de Informação (turma 26/1). 
+                    Estou iniciando minha trajetória acadêmica com o objetivo de construir uma base sólida em tecnologia e inovação. 
+                    Sou entusiasta de novas ferramentas e estou em busca de aprendizado contínuo, networking com profissionais da área e 
+                    oportunidades que me permitam aplicar, futuramente, os conceitos que estou começando a explorar agora. </p> 
+
+            </article>
+
+            <article>
+                <h3>Competências</h3> <!-- Categorizada em listas -->
+                <ul id="competencias"> <!-- Criando a lista -->
+                    <li><strong>Aprendizado Ágil (Fast Learner):</strong> Alta capacidade de absorção de novos conceitos, ferramentas e linguagens de programação, mantendo-se atualizado com as tendências acadêmicas.</li>
+                    <li><strong>Comunicação Eficaz:</strong> Habilidade para trabalhar em equipe e articular ideias de forma clara, facilitando a integração em projetos colaborativos.</li>
+                    <li><strong>Familiaridade com Ambientes Digitais:</strong> Domínio de ferramentas de produtividade e facilidade com sistemas operacionais e navegação técnica.</li>
+                    <li><strong>Proatividade Acadêmica:</strong> Busca constante por cursos complementares e participação em fóruns e comunidades de tecnologia para acelerar o desenvolvimento profissional</li>
+                </ul>
+            </article>    
+
+            <article>
+                <h3>Minhas redes sociais</h3>
+                <p>Perfis pessoais e profissionais, dentre eles:</p>
+                    <div class="container">
+                        <nav>
+                            <ul id="link-sm">
+                            <li><a href="https://www.instagram.com/">Instagram</a></li>
+                            <li><a href="https://github.com/?locale=pt-BR">GitHub</a></li>
+                            <li><a href="https://br.linkedin.com/">Linkedin</a></li>
+                            </ul>    
+                        </nav>
+                    </div>  
+                    
+            </article>
+        </section>
+
+    </main>
+
+    <footer> <!-- Rodapé -->
+        <p>&copy; 2026 - Disciplina de Aplicações Web</p>
+    </footer>
+</body>
+</html>
