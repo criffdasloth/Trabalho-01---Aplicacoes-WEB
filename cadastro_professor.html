@@ -3,38 +3,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro para professores</title>
+    <link rel="stylesheet" type="text/css" href="style-index.css">
     <link rel="stylesheet" type="text/css" href="style-form.css">
 </head>
 <body>
+    <div class="container">
+        <h3>Formulário de Contato Professor</h3>
+        <div class="input-group">    
+            <form id="form-aluno" action="/submit-form" method="post">
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome_prof" name="nome" placeholder="Digite seu nome e sobrenome" required>
+                </div>
 
-<div class="container">
-    <h1>Formulário de Contato</h1>
+                <div>
+                    <label for="cpf">CPF:</label>
+                    <input type="number" id="cpf_prof" name="cpf_prof" placeholder="XXX-XXX-XXX-XX" required>
+                </div>
 
-<form action="/submit-form" method="post">
-    <label for="nome">Nome:</label>
-    <input type="text" id="nome_prof" name="nome" placeholder="Digite seu nome e sobrenome" required>
+                <div>
+                    <label for="endereço">Endereço:</label>
+                    <input type="text" id="endereco_prof" name="endereco_prof" placeholder="Digite seu endereço">
+                </div>
 
-    <label for="cpf">CPF:</label>
-    <input type="number" id="cpf_prof" name="cpf_prof" placeholder="XXX-XXX-XXX-XX" required>
-
-    <label for="endereço">Endereço:</label>
-    <input type="text" id="endereco_prof" name="endereco_prof" placeholder="Digite seu endereço">
-
-    <label for="departamento">Departamento:</label>
-    <input type="text" id="dep_professor" name="dep_professor" placeholder="Digite o departamento em que trabalha" required>
-    
-    <label for="titulacao">Titulação:</label>
-    <input type="text" id="titulacao_prof" name="titulacao_prof" placeholder="Digite sua titulação" required>
-
-    <label for="email institucional">E-mail institucional:</label>
-    <input type="email" id="email_prof" name="email_prof" placeholder="Digite seu email" required>
-
-    <label for="area de atuacao">Área de atuação::</label>
-    <input type="text" id="atuacao_prof" name="atuacao_prof" placeholder="Digite sua área de atuação" required>
-
-    <input type="submit" value="Enviar">
-    </form>
-</div>
-
+                <div class="label-group">
+                <label for="departamento">Departamento:</label>
+                <input type="text" id="dep_professor" name="dep_professor" placeholder="Digite o departamento em que trabalha" required>
+                </div>
+                <div class="label-group">
+                    <label for="titulacao">Titulação:</label>
+                    <input type="text" id="titulacao_prof" name="titulacao_prof" placeholder="Digite sua titulação" required>
+                </div>
+                <div class="label-group">
+                    <label for="email institucional">E-mail institucional:</label>
+                    <input type="email" id="email_prof" name="email_prof" placeholder="Digite seu email" required>
+                </div>        
+                <div class="label-group">
+                    <label for="area de atuacao">Área de atuação::</label>
+                    <input type="text" id="atuacao_prof" name="atuacao_prof" placeholder="Digite sua área de atuação" required>
+                </div>
+                <div class="label-group">
+                    <button type="submit">
+                         Enviar
+                    </button>
+                </div>
+            </form>
+    </div>
 </body>
 </html>

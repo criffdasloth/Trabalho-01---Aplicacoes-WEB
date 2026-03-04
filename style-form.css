@@ -1,29 +1,66 @@
-.input-group {
-    display: block;
-    flex-wrap: wrap;
-
+body{
+    width: 100%;
+    height: 100vh;
+    transform: scale(1);
+    margin: 0 auto;
+    align-content:center;
+    justify-content: center;
+    background-color: rgb(173, 173, 173);
+}
+.container{
+    max-width: fit-content;
+    padding: 4% 2% 2% 2%;
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    border-radius: 20px;
 }
 
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+}
+
+#form-aluno {
+    margin-top: 7%;
+}
+
+.label-group {
+    margin-bottom: 5;
+}
+.label-group button{
+    justify-self:auto;
+}
 input[type="text"],
 input[type="number"],
 input[type="email"],
 input[type="tel"] {
-    width: 20%;
     padding: 0.5rem;
-    border: 2px solid #CCD595; /* personalizando a borda */
+    border: 0.5px solid #CCD595; /* personalizando a borda */
     outline: none; /* tirando o outiline, estética */
     border-radius: 100px; /* arredondando as bordas */
-
-
 }
 
 /* Diferenciando o botão de enviar */
 
-input[type="submit"] {
-    width: 10%;
-    padding: 0.2rem;
+button{
+    padding: 0.5rem;
     border: 2px solid #CCD595; /* personalizando a borda */
     outline: none; /* tirando o outiline, estética */
-    border-radius: 100px; /* arredondando as bordas */
-    text-align: center;
+    border-radius: 10px; /* arredondando as bordas */
+    display: block;
+    margin: 0 auto;
+    margin-top: 10%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+
+}
+
+button:hover{
+    transition-duration: 0.25s;
+    color: aliceblue;
+    background-color: rgb(130, 199, 170);
 }
