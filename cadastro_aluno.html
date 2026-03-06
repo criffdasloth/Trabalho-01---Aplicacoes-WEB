@@ -3,35 +3,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro para alunos</title>
-    <link rel="stylesheet" type="text/css" href="style-form.css">
     <link rel="stylesheet" type="text/css" href="style-index.css">
+    <link rel="stylesheet" type="text/css" href="style-form.css">
 </head>
 <body>
 
 <div class="container">
-    <h3>Formulário de cadastro</h3>
+    <h3>Formulário de Cadastro Alunos</h3>
 
     <div class="input-group">    
         <form id="form-aluno" action="/submit-form" method="post"> <!-- Identificando o formulário do aluno -->
-            <label for="nome">Nome completo:</label>
-            <input type="text" id="nome_aluno" name="nome_aluno" placeholder="Digite seu nome e sobrenome" required>
-
-            <label for="matrícula">Matrícula:</label>
-            <input type="number" id="matricula" name="matricula" placeholder="Digite sua matrícula" required>
-
-            <label for="curso">Curso:</label>
-            <input type="text" id="curso_id" name="curso" placeholder="Digite o curso qual está cursando" required>
-
-            <label for="semestre de ingresso">Semestre de ingresso:</label>
-            <input type="number" id="sm_ing" name="sm-ing" placeholder="Digite o semestre de ingresso" required>
-
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" placeholder="Digite seu email" required>
-
-            <label for="numero para contato">Número para contato:</label>
-            <input type="tel" id="n_contato" name="n_contato" placeholder="(XX) XXXX-XXXX" required>
-
-            <input type="submit" value="Entrar">
+            <div class="label-group">
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome_aluno" name="nome_aluno" placeholder="Digite seu nome e sobrenome" required>
+             </div>
+            <div class="label-group">
+                <label for="matrícula">Matrícula:</label>
+                <input type="number" id="matricula" name="matricula" placeholder="Digite sua matrícula" required>
+            </div>
+            <div class="label-group">
+                <label for="curso">Curso:</label>
+                <input type="text" id="curso_id" name="curso" placeholder="Digite o curso qual está cursando" required>
+            </div>
+            <div class="label-group">
+                <label for="semestre de ingresso">Semestre de ingresso:</label>
+                <input type="number" id="sm_ing" name="sm-ing" placeholder="Digite o semestre de ingresso" required>
+            </div>
+            <div class="label-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+            </div>
+            <div class="label-group">
+                <label for="numero para contato">Número para contato:</label>
+                <input type="tel" id="n_contato" name="n_contato" placeholder="(XX) XXXX-XXXX" required>
+            </div>
+            <div class="label-group">
+                <button type="submit">
+                    Entrar
+                </button>
+            </div>
         </form>       
     </div>
 </div>

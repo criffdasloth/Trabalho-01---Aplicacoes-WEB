@@ -8,23 +8,26 @@
 </head>
 
 <body> <!-- Cabeçalho com informações introdutórias da página e links para páginas externas -->
-    <header id="cabecalho"> 
-        <h1>Página de apresentação!</h1>
-        <p> Bem-vindo ao meu portifólio!</p>
+    <header id="index-header"> 
+        <div id="info-header">
+            <h1>Página de apresentação!</h1>
+            <p> Bem-vindo ao meu portifólio!</p>
+        </div>
+
+        <div >
+            <nav id="nav-cabecalho"> <!-- Adicionando botões no cabeçalho -->
+                <div class="button-header">
+                    <a href="cadastro_aluno.html">Cadastro para alunos</a>
+                </div>
+                <div class="button-header">
+                    <a href="cadastro_professor.html">Cadastro para professores</a>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <main id="conteudo-principal"> <!-- Seção principal da página -->
         
-        <section id="links-externos"> <!-- Seção com os links externos -->
-            <div class="container">
-                <nav>
-                    <ul>
-                    <h4>Links utéis:</h4>
-                    <li><a href="cadastro_aluno.html">Cadastro para alunos</a></li>
-                    <li><a href="cadastro_professor.html">Cadastro para professores</a></li>
-                    </ul>
-                </nav>
-            </div>  
         </section>
         
         <section id="posts">

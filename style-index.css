@@ -16,10 +16,45 @@
 
 
 header { /* Estilizando o cabeçalho */
-    padding: 2rem; /* unidade de medida variável conforme dispositivo */
+padding: 2rem; /* unidade de medida variável conforme dispositivo */
     text-align: center;
-    background-color: rgb(27, 82, 82);
+    background-color: #2E1F0F;
+}
 
+#index-header {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: flex-end; 
+    flex-wrap: nowrap; 
+    gap: 1rem;; 
+}
+
+.button-header a {
+    border: 2px solid #C8935A; /* personalizando a borda */
+    outline: none; /* tirando o outiline, estética */
+    border-radius: 99px; /* arredondando as bordas */
+    margin: 0 auto;
+    margin-top: 10%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    background-color: #8C4A2F;   
+    color: #FAF3E8;               
+    padding: 0.5rem 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    transition: background-color 0.2s;
+}
+
+/* Navegação do cabeçalho */
+#nav-cabecalho {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+#nav-cabecalho a:hover {
+  background-color: #2E1F0F;   /* Mogno — cor-texto */
 }
 
 
@@ -29,9 +64,9 @@ body { /* Estilizando o "body" como um todo */
     transform-origin: top left;
     transform: scale(2); /* Ajustando as proporções conforme os elementos do projeto */
     line-height: 1.5; /* Espaçamento entre as linhas */
-    background-color: #F4F0EA;
+    background-color: #FAF3E8;
     background-repeat: no-repeat;
-    color: #798252; 
+    color: #C8935A; 
 
 }
 
@@ -50,8 +85,13 @@ section {
 
 }
 
-h1, h2, h3, h4 {
-    color: #331f19;
+h1 { /* Personalizando título príncipal */
+    color: #FAF3E8;
+
+}
+
+h2, h3, h4 { /* subtítulos */
+    color: #2E1F0F;
 }
 
 footer {
@@ -63,14 +103,12 @@ footer {
 
 #links-externos {
     text-align: center;
-    
 }
 
 #links-externos li {
     text-align: justify;
     margin-bottom: 15%;
     font-size: small;
-
 }
 
 /* Formatando imagem */
@@ -97,13 +135,12 @@ li {
     flex-direction: row; /* */
     gap: 1rem; /* margem entre os componentes */
     justify-content: center;
-    
 }
 
 .container { /* Padronizando os itens com o class "container" */
-    background-color: #d8dad1;
+    background-color: #EDD9B4;
     padding: 0.2rem;
-    border: 2px solid #CCD595;
+    border: 2px solid #C8935A;
     border-radius: 15px;
 }
 
